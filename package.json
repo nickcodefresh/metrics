@@ -1,11 +1,14 @@
 {
-  "name": "metrics",
+  "name": "metrics-flex",
   "description": "A node.js port of Coda Hale's metrics library.  In use at Yammer.",
   "version": "0.1.14",
   "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git://github.com/mikejihbe/metrics.git"
+  },
+  "publishConfig": {
+    "registry": "https://nexus.ooflex.net/repository/npm-flex/"
   },
   "author": "Mike Ihbe <mikejihbe@gmail.com> (mikeihbe.com)",
   "directories": {

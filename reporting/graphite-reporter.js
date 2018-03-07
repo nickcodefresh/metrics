@@ -58,7 +58,7 @@ GraphiteReporter.prototype.report = function() {
   }
   var metrics = this.getMetrics();
   var self = this;
-  var timestamp = Math.round(new Date().getTime()/1000.0).getTime();
+  var timestamp = Math.round(new Date().getTime()/1000.0);
 
   if(metrics.counters.length != 0) {
     metrics.counters.forEach(function (count) {

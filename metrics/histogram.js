@@ -92,7 +92,7 @@ Histogram.prototype.mean = function() {
 }
 
 Histogram.prototype.stdDev = function() {
-  return this.count < 1 ? null : Math.sqrt(this.variance());
+  return this.count < 1 || isNaN(this.variance()) ? null : Math.sqrt(this.variance());
 }
 
 Histogram.prototype.values = function() {
